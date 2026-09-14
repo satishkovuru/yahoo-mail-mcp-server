@@ -1,0 +1,24 @@
+{
+  "name": "yahoo-mail-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server exposing Yahoo Mail (IMAP/SMTP) tools for Claude Desktop and Claude Code",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "yahoo-mail-mcp-server": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "imapflow": "^1.0.171",
+    "mailparser": "^3.7.2",
+    "nodemailer": "^6.9.16",
+    "zod": "^3.23.8"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
